@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Description - Foodease</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="try foods/Logo.jpg">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+        header {
+            background-color: #ff6f00;
+            padding: 15px 20px;
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 40px;
+        }
+        header button {
+            background-color: #fff;
+            color: #ff6f00;
+            border: none;
+            padding: 8px 15px;
+            font-size: 16px;
+            font-weight: 500;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        header button:hover {
+            background-color: #ffe0b2;
+        }
+        .container {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .order-summary, .delivery-address, .order-status {
+            background: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            width: 100%;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .order-summary h2, .delivery-address h2, .order-status h2 {
+            margin: 0 0 15px;
+        }
+        .order-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .order-item:last-child {
+            margin-bottom: 0;
+        }
+        .order-item .details {
+            display: flex;
+            flex-direction: column;
+        }
+        .order-item .details span {
+            font-size: 14px;
+        }
+        .order-item .price {
+            font-weight: 700;
+        }
+        .total {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: 700;
+        }
+        .checkout-button {
+            background-color: #ff6f00;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+            border-radius: 8px;
+            font-weight: 700;
+            cursor: pointer;
+            margin-top: 20px;
+            display: block;
+            text-decoration: none;
+        }
+        .checkout-button:hover {
+            background-color: #e65c00;
+        }
+        .address-details, .status-details {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        .status-details span {
+            display: block;
+            margin-top: 10px;
+        }
+        .status-details span strong {
+            color: #ff6f00;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #333;
+            color: #fff;
+        }
+    </style>
+    <script>
+        function showPopup() {
+            alert('Your order has been successfully placed!');
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <a href="menu1.html" style="color: white; text-decoration: none; font-size: 50px;">←</a>
+        <h1 ><img src="try foods/Logo.jpg" width="50px" height="50px" alt="FoodEase Logo" >Foodease</h1>
+        <button>Cart</button>
+    </header>
+    <div class="container">
+        <div class="order-summary">
+            <h2>Your Order</h2>
+            <div class="order-item">
+                <div class="details">
+                    <strong>Margherita Pizza</strong>
+                    <span>Size: Medium</span>
+                    <span>Extra Toppings: Olives</span>
+                </div>
+                <div class="price">₹300</div>
+            </div>
+            <div class="order-item">
+                <div class="details">
+                    <strong>Veg Burger</strong>
+                    <span>Cheese: Yes</span>
+                    <span>Fries Included</span>
+                </div>
+                <div class="price">₹150</div>
+            </div>
+            <div class="total">
+                <span style="color: e65c00;">Total</span>
+                <span>₹450</span>
+            </div>
+            
+        </div>
+        <div class="delivery-address">
+            <h2>Delivery Address</h2>
+            <div class="address-details">
+                <p>John Doe</p>
+                <p>123, Park Street</p>
+                <p>New Delhi, Delhi - 110001</p>
+                <p>Phone: +91-9876543210</p>
+            </div>
+        </div>
+        <div class="order-status">
+            <h2>Order Status</h2>
+            <div class="status-details">
+                <span><strong>Order Placed:</strong> 12:30 PM</span>
+                <span><strong>Preparing:</strong> 12:45 PM</span>
+                <span><strong>Out for Delivery:</strong> 1:15 PM</span>
+                <span><strong>Estimated Delivery:</strong> 1:45 PM</span>
+                <a href="#" class="checkout-button" onclick="showPopup()">Proceed to Pay</a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Foodease. All rights reserved. | <a href="Privacy Policy.html" style="color: orangered;">Privacy Policy</a></p>
+    </footer>
+</body>
+</html>

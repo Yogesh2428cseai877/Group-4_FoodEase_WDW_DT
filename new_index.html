@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FoodEase</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="icon" href="try foods/Logo.jpg">
+  <style>
+    body {
+        background-image: url('assest/WhatsApp Image 2024-12-10 at 16.48.12.jpeg');
+        background-size: cover;
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 30px;
+        background-color: rgba(255, 255, 255, 0.9);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+
+    .logo {
+        font-size: 24px;
+        font-weight: bold;
+        color: #FF5722;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: #333;
+        font-size: 16px;
+        transition: color 0.3s;
+    }
+
+    nav a:hover {
+        color: #FF5722;
+    }
+
+    .app-button,
+    .sign-in-button,
+    .nav-button {
+        background-color: #FF5722;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s;
+    }
+
+    .app-button:hover,
+    .sign-in-button:hover,
+    .nav-button:hover {
+        background-color: #E64A19;
+    }
+
+    li {
+        list-style: none;
+    }
+
+    .button-container {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        margin-top: 20px;
+        justify-content: center;
+    }
+
+    @media (max-width: 768px) {
+        nav {
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        header {
+            flex-wrap: wrap;
+            padding: 10px 20px;
+        }
+    }
+
+
+    footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        footer a {
+            color: #ff8c42;
+            text-decoration: none;
+        }
+
+  </style>
+</head>
+<body>
+  <header>
+    <img src="try foods/Logo.jpg" height="100px" alt="Logo;">
+    <div class="logo" style="text-align: left;">FoodEase</div>
+    <nav>
+      
+      <button class="app-button">Get the App</button>
+      <a href="sign_in.html" target="_blank"><button class="sign-in-button">Sign in</button></a>
+      
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Order food & groceries. Discover best restaurants. FoodEase it!</h1>
+      <div class="search-bar">
+        <input type="text" placeholder="Enter your delivery location">
+        <input type="text" placeholder="Search for restaurant, item or more">
+        <button>Search</button>
+      </div>
+    </section>
+
+    <section class="button-container">
+      <a href="menu1.html" target="_blank"><button class="nav-button" target="_blank">Menu</button></a>
+      <a href="contact_us.html" target="_blank"><button class="nav-button">Contact Us</button></a>
+      <a href="aboutus.html" target="_blank"><button class="nav-button">About Us</button></a>
+      <a href="order.html" target="_blank"><button class="nav-button">Cart</button></a>
+    </section>
+
+    <section class="services">
+      <div class="service-card">
+        <img src="assest/WhatsApp Image 2024-12-10 at 17.33.28.jpeg" alt="Food Delivery">
+        <h3>Food Delivery</h3>
+        <p>From restaurants</p>
+        <span>Upto 60% off</span>
+      </div>
+      <div class="service-card">
+        <img src="assest/WhatsApp Image 2024-12-10 at 17.34.12.jpeg" alt="Instamart">
+        <h3>Instamart</h3>
+        <p>Instant grocery</p>
+        <span>Upto 60% off</span>
+      </div>
+      <div class="service-card">
+        <img src="assest/WhatsApp Image 2024-12-10 at 17.38.18.jpeg" alt="Dineout">
+        <h3>Dineout</h3>
+        <p>Eat out & save more</p>
+        <span>Upto 50% off</span>
+      </div>
+      <div class="service-card">
+        <img src="assest/genie.jpeg" alt="Genie">
+        <h3>Genie</h3>
+        <p>Pick-up & Drop</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Foodease. All rights reserved. | <a href="Privacy Policy.html" style="color: orangered;">Privacy Policy</a></p>
+</footer>
+  
+</body>
+</html>
